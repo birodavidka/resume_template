@@ -17,12 +17,13 @@ export const metadata: Metadata = {
   description: "A customizable resume template",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const cookieStore = cookies();
+  // ⬇️ NEXT 15: cookies() aszinkron
+  const cookieStore = await cookies();
   const cookieLocale = cookieStore.get("resume-locale")?.value as
     | Locale
     | undefined;
