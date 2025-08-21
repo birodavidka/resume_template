@@ -9,15 +9,18 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { useResumeStore } from "@/lib/store/useResumeStore";
 
 type Props = {};
 
 const PersonSelector: React.FC<Props> = ({}) => {
   const id = useId();
+  const personId = useResumeStore((s) => s.personId);
+  const setPerson = useResumeStore((s) => s.setPerson);
 
   return (
     <div className="*:not-first:mt-2">
-      <Select defaultValue="1">
+      <Select defaultValue={personId} onValueChange={setPerson}>
         <SelectTrigger
           id={id}
           className="h-auto ps-2 text-left [&>span]:flex [&>span]:items-center [&>span]:gap-2 [&>span_img]:shrink-0"

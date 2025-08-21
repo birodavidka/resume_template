@@ -9,6 +9,7 @@ type ResumeState = {
   setLocale: (l: Locale) => void;
   setPerson: (p: PersonId) => void;
   reset: () => void;
+  init?: (partial: Partial<Pick<ResumeState, "locale" | "personId">>) => void;
 };
 
 export const useResumeStore = create<ResumeState>()(
@@ -16,12 +17,22 @@ export const useResumeStore = create<ResumeState>()(
     (set) => ({
       locale: "hu",
       personId: "personA",
-      setLocale: (l) => set({ locale: l }),
-      setPerson: (p) => set({ personId: p }),
+      setLocale: (l) => {
+        // opcionális: cookie sync
+        if (typeof document !== "undefined") {
+          document.cookie = `resume-locale=${l}; path=/; max-age=31536000`;
+        }
+        set({ locale: l });
+      },
+      setPerson: (p) => {
+        if (typeof document !== "undefined") {
+          document.cookie = `resume-person=${p}; path=/; max-age=31536000`;
+        }
+        set({ personId: p });
+      },
       reset: () => set({ locale: "hu", personId: "personA" }),
+      init: (partial) => set((s) => ({ ...s, ...partial })),
     }),
-    {
-      name: "resume-store", // localStorage kulcs
-    }
+    { name: "resume-store" } // localStorage kulcs
   )
 );
