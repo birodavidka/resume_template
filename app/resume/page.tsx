@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useMemo } from "react";
-import { useLangStore } from "@/lib/store/lang"; // shared Zustand store
+import { PersonId, useLangStore } from "@/lib/store/lang"; // shared Zustand store
 import { resumeDATA } from "@/content/ResumeData"; // externalized resume content
 import { Separator } from "@/components/ui/separator";
 import { Progress } from "@/components/ui/progress";
@@ -84,7 +84,9 @@ function PersonSelector() {
           key={o.id}
           onClick={() => setPerson(o.id as any)}
           className={`px-3 py-1 rounded-full text-xs border ${
-            person === o.id ? "bg-black text-white" : "bg-white text-gray-700"
+            person === (o.id as PersonId)
+              ? "bg-black text-white"
+              : "bg-white text-gray-700"
           }`}
           aria-pressed={person === o.id}
         >
@@ -208,8 +210,8 @@ export default function ResumePage() {
             {/* Skills */}
             <section>
               <SectionTitle>{t.labels.skills}</SectionTitle>
-              <p className="uppercase text-xs text-gray-500 tracking-[0.2em] mb-2"></p>
-              <ul className="space-y-2 text-sm text-gray-700">
+              <p className="uppercase text-xs text-gray-500 tracking-[0.1em] mb-1"></p>
+              <ul className="space-y-1 text-sm text-gray-700">
                 {t.skills.map((s, i) => (
                   <li key={i}>{s}</li>
                 ))}
