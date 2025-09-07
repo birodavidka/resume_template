@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<!-- This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
@@ -34,3 +34,60 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ -->
+
+ # 📄 Resume Template
+
+A multilingual **Resume & Cover Letter generator** built with [Next.js 15](https://nextjs.org/),  
+featuring multi-person & multi-language support, print-ready PDF export, and a clean UI.
+
+---
+
+## 🚀 Features
+
+- 🌍 Multilingual support (EN / DE / HU)  
+- 👤 Person selector (multiple CVs in one app)  
+- 📝 Resume + Cover Letter templates  
+- 🖨️ Print-ready PDF export (via `react-to-print`)  
+- 🎨 Styled with [shadcn/ui](https://ui.shadcn.com/) components  
+- ⚡ Built on [Next.js 15](https://nextjs.org/) + [TypeScript](https://www.typescriptlang.org/)  
+- 🗂️ Centralized data structure (`resumeDATA`, `coverLetterDATA`)  
+
+---
+
+## 🛠️ Tech Stack
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=nextjs,typescript,tailwind,react" height="40" />
+  <img src="https://raw.githubusercontent.com/shadcn/ui/main/apps/www/public/favicon.ico" height="40" />
+  <img src="https://skillicons.dev/icons?i=firebase,aws" height="40" />
+</p>
+
+- **Next.js 15 (App Router)** – Routing, SSR/CSR/ISR  
+- **TypeScript** – Type safety  
+- **TailwindCSS** – Utility-first styling  
+- **shadcn/ui** – Accessible UI components  
+- **Framer Motion** – Animations  
+- **Zustand** – Global state (language & person selection)  
+- **react-to-print** – Print/PDF export  
+
+---
+
+## 📂 Project Structure
+
+```bash
+resume_template/
+├─ app/
+│  ├─ resume/        # Resume page
+│  ├─ cover-letter/  # Cover Letter page
+│  ├─ print/         # Print both pages into one PDF
+│  └─ globals.css
+├─ components/
+│  ├─ ui/            # shadcn/ui components
+│  └─ PersonSelector.tsx, LanguageSelector.tsx
+├─ content/
+│  ├─ ResumeData.ts  # Multilingual & multi-person resume data
+│  └─ CoverLetterData.ts
+├─ lib/
+│  └─ store/         # Zustand store (lang & person)
+└─ README.md
