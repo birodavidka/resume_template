@@ -46,10 +46,10 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
       nameBottom: "DAVID",
       title: "University of Dunaújváros grad",
       contact: {
-        addressLines: ["Szombathely", "HUNGARY"],
-        phone: "(+36 30) 185 5542",
-        email: "biro.david93@gmail.com",
-        website: " ",
+        addressLines: ["Lorem Ipsum, egyszerű minta", "Sugárút, New York, USA"],
+        phone: "+(0123) 456 789",
+        email: "nameinfo@example.com",
+        website: "www.namedomain.com",
       },
       labels: {
         education: "Education",
@@ -84,7 +84,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         { title: "German language learning – in progress" },
       ],
       profile:
-        "Lorem ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting.",
+        "Reliable and adaptable employee with practical experience in manufacturing. Known for precision, teamwork, and a willingness to learn new skills.",
       experience: [
         {
           year: "2024",
@@ -115,10 +115,10 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
       nameBottom: "DAVID",
       title: "Universität Dunaújváros, Abschluss",
       contact: {
-        addressLines: ["Kenyérvíz strasse", "Ungarn, Szombathely"],
-        phone: "(+36 30) 185-5542",
-        email: "biro.david93@gmail.com",
-        website: " ",
+        addressLines: ["Lorem Ipsum, egyszerű minta", "Sugárút, New York, USA"],
+        phone: "+(0123) 456 789",
+        email: "nameinfo@example.com",
+        website: "www.namedomain.com",
       },
       labels: {
         education: "Ausbildung",
@@ -134,8 +134,18 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         { name: "Deutsch", value: 15, levelLabel: "" },
       ],
       education: [
-        { from: "2024", to: "2026", degree: "Studienabschluss eintragen", place: "Institutsname, Ort" },
-        { from: "2010", to: "2014", degree: "Studienabschluss eintragen", place: "Institutsname, Ort" },
+        {
+          from: "2024",
+          to: "2026",
+          degree: "Studium Wirtschaftsingenieurwesen – Fachrichtung Informatik",
+          place: "Universität Dunaújváros, Dunaújváros",
+        },
+        {
+          from: "2011",
+          to: "2013",
+          degree: "Assistent für Logistik- und Produktionsmanagement",
+          place: "Berufsbildungszentrum Savaria (VMSZC), Szombathely",
+        },
       ],
       skillsHeader: "// Professionell",
       skills: [
@@ -152,7 +162,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         { title: "AWS Cloud Practitioner – in Ausbildung" },
         { title: "Deutsch lernen – in Ausbildung" },
       ],
-      profile: "Lorem Ipsum ist ein Blindtext der Druck- und Satzindustrie und hat Jahrhunderte überdauert.",
+      profile: "Zuverlässiger und anpassungsfähiger Mitarbeiter mit praktischer Erfahrung in der Produktion. Bekannt für Genauigkeit, Teamarbeit und die Bereitschaft, neue Fähigkeiten zu erlernen.",
       experience: [
         {
           year: "2024",
@@ -203,7 +213,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
       ],
       education: [
         { from: "2024", to: "2026", degree: "Mérnökinformatikus", place: "Dunaújvárosi Egyetem, Dunaújváros" },
-        { from: "2011", to: "2013", degree: "Logisztikai műszakimenedzser asszisztens", place: "Intézmény neve, Szombathely" },
+        { from: "2011", to: "2013", degree: "Logisztikai műszakimenedzser asszisztens", place: "VMSZC Savaria , Szombathely" },
       ],
       skillsHeader: "// Professzionális",
       skills: [
@@ -222,7 +232,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
       ],
       
       profile:
-        "Helykitöltő szöveg a nyomdai és kiadói iparból; évszázadok óta használatos, és túlélte az elektronikus kiadványszerkesztés korát.",
+        "Megbízható és alkalmazkodó munkavállaló termelési tapasztalattal. Erősségeim a precizitás, a csapatmunka és az új készségek elsajátítására való nyitottság.",
       experience: [
         {
           year: "2024",
@@ -253,7 +263,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
   // példa: második személy – töltsd ki később
   Dzsenifer: {
     en: {
-      nameTop: "KULCSÁR",
+      nameTop: "KULCSAR",
       nameBottom: "DZSENIFER",
       title: "Professional Title",
       contact: {
@@ -265,7 +275,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
       labels: {
         education: "Education",
         skills: "Skills",
-        award: "Award",
+        others: "Others",
         profile: "Profile",
         workExperience: "Work Experience",
         languages: "Languages", // 
@@ -276,55 +286,51 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         { name: "German", value: 15, levelLabel: "" },
       ],
       education: [
-        { from: "2014", to: "2018", degree: "Enter Your Degree", place: "Institute Name, Location" },
-        { from: "2010", to: "2014", degree: "Enter Your Degree", place: "Institute Name, Location" },
+        { from: "2017", to: "2019", degree: "Nursing qualification", place: "Deák Ferenc Technical School, Zalaegerszeg" },
+        { from: "2020", to: "2021", degree: "Pedagogical Assistant", place: "Számpont Educational Center" },
       ],
       skillsHeader: " asd",
       skills: [
-        "Public Relations",
-        "Resource Management",
-        "Team Leadership",
-        "Social Media Marketing",
-        "Online Marketing",
-        "Budgeting and Planning",
-        "Problem Solving",
-        "IT Applications",
+        "Team collaboration",
+        "Adaptability",
+        "Patience & empathy",
+        "Basic knowledge of 5S principles",
+        "Attention to detail",
+        "Supporting learning processes",
       ],
-      award: {
-        year: "2013",
-        title: "Award / Achievement",
-        place: "Company Name / Location",
-        note: "Lorem ipsum is simply dummy text printing and typesetting.",
-      },
-      profile:
-        "Lorem ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting.",
+      others: [
+        { title: "MS Office skills" },
+        { title: "B category driving license" },
+      ],
+      profile: "Reliable and supportive employee with experience in education and manufacturing. Known for teamwork, adaptability, and willingness to learn new skills.",
       experience: [
         {
-          year: "2014",
-          company: "Company Name",
-          position: "Enter Your Job Position",
-          summary: "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
-          bullets: ["Wrote and maintained production-grade code.", "Cross-team collaboration.", "Improved performance."],
+          year: "2022 – 2025",
+          company: "Aptiv Services Hungary Kft.",
+          position: "Production Operator (Electronics Assembly)",
+          summary: "Worked in electronics manufacturing (SMT), focusing on precision and teamwork.",
+          bullets: [
+            "Performed assembly tasks in line with quality standards",
+            "Applied 5S principles and maintained workplace organization",
+            "Ensured production goals were met in a fast-paced environment",
+          ],
         },
         {
-          year: "2018",
-          company: "Company Name",
-          position: "Enter Your Job Position",
-          summary: "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
-          bullets: ["Owned deliverables.", "Mentored juniors.", "Automated workflows."],
-        },
-        {
-          year: "2024",
-          company: "Company Name",
-          position: "Enter Your Job Position",
-          summary: "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
-          bullets: ["Led migration.", "Shipped features.", "Optimized costs."],
+          year: "2020 – 2021",
+          company: "Mindszenti József Primary and Secondary School",
+          position: "Pedagogical Assistant",
+          summary: "Assisted teachers and supported students in daily school activities.",
+          bullets: [
+            "Supported classroom activities and learning processes",
+            "Assisted students with individual needs",
+            "Contributed to a positive and organized learning environment",
+          ],
         },
       ],
     },
     de: {
-        nameTop: "ARENA",
-        nameBottom: "HERNADES",
+        nameTop: "KULCSAR",
+        nameBottom: "DZSENIFER",
         title: "Berufliche Bezeichnung",
         contact: {
           addressLines: ["Lorem Ipsum, einfach Dummy", "Allee, New York, USA"],
@@ -335,7 +341,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         labels: {
           education: "Ausbildung",
           skills: "Fähigkeiten",
-          award: "Auszeichnung",
+          others: "Auszeichnung",
           profile: "Profil",
           workExperience: "Berufserfahrung",
           languages: "Sprachen",
@@ -346,53 +352,50 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
           { name: "Deutsch", value: 15, levelLabel: "" },
         ],
         education: [
-          { from: "2014", to: "2018", degree: "Studienabschluss eintragen", place: "Institutsname, Ort" },
-          { from: "2010", to: "2014", degree: "Studienabschluss eintragen", place: "Institutsname, Ort" },
+          { from: "2017", to: "2019", degree: "Abschluss in Krankenpflege", place: "Deák Ferenc Technikum, Zalaegerszeg" },
+          { from: "2020", to: "2021", degree: "Pädagogische Assistentin", place: "Számpont Bildungszentrum" },
         ],
         skillsHeader: "// Professionell",
         skills: [
-          "Öffentlichkeitsarbeit",
-          "Ressourcenmanagement",
-          "Teamführung",
-          "Social-Media-Marketing",
-          "Online-Marketing",
-          "Budgetierung & Planung",
-          "Problemlösung",
-          "IT-Anwendungen",
+          "Teamarbeit",
+          "Anpassungsfähigkeit",
+          "Geduld & Empathie",
+          "Grundkenntnisse der 5S-Prinzipien",
+          "Detailgenauigkeit",
+          "Unterstützung von Lernprozessen",
         ],
-        award: {
-          year: "2013",
-          title: "Auszeichnung / Leistung",
-          place: "Firmenname / Ort",
-          note: "Lorem ipsum Blindtext für Druck & Satz.",
-        },
-        profile: "Lorem Ipsum ist ein Blindtext der Druck- und Satzindustrie und hat Jahrhunderte überdauert.",
+        others: [
+          { title: "MS Office Kenntnisse" },
+          { title: "Führerschein Klasse B" },
+        ],
+        profile: "Zuverlässige und hilfsbereite Mitarbeiterin mit Erfahrung im Bildungswesen und in der Produktion. Bekannt für Teamarbeit, Anpassungsfähigkeit und Lernbereitschaft.",
         experience: [
           {
-            year: "2014",
-            company: "Firmenname",
-            position: "Jobbezeichnung",
-            summary: "Kurzbeschreibung der Tätigkeit.",
-            bullets: ["Produktionscode gepflegt", "Mit Teams kooperiert", "Performance verbessert"],
+            year: "2022 – 2025",
+            company: "Aptiv Services Hungary Kft.",
+            position: "Produktionsmitarbeiterin (Elektronikmontage)",
+            summary: "Tätig in der Elektronikfertigung (SMT) mit Schwerpunkt auf Genauigkeit und Teamarbeit.",
+            bullets: [
+              "Montagearbeiten nach Qualitätsstandards durchgeführt",
+              "5S-Prinzipien angewendet und Arbeitsplatzorganisation sichergestellt",
+              "Erreichung der Produktionsziele in einem dynamischen Umfeld",
+            ],
           },
           {
-            year: "2018",
-            company: "Firmenname",
-            position: "Jobbezeichnung",
-            summary: "Kurzbeschreibung der Tätigkeit.",
-            bullets: ["Deliverables verantwortet", "Juniors gecoacht", "Workflows automatisiert"],
-          },
-          {
-            year: "2024",
-            company: "Firmenname",
-            position: "Jobbezeichnung",
-            summary: "Kurzbeschreibung der Tätigkeit.",
-            bullets: ["Migration geleitet", "Features ausgeliefert", "Kosten optimiert"],
+            year: "2020 – 2021",
+            company: "Mindszenti József Grund- und Oberschule",
+            position: "Pädagogische Assistentin",
+            summary: "Unterstützung von Lehrkräften und Schülern im Schulalltag.",
+            bullets: [
+              "Unterstützung bei Unterrichtsaktivitäten und Lernprozessen",
+              "Begleitung von Schülern mit individuellem Förderbedarf",
+              "Mitwirkung an einer positiven und strukturierten Lernumgebung",
+            ],
           },
         ],
     } as ResumeData,
-    hu: {nameTop: "ARENA",
-      nameBottom: "HERNADES",
+    hu: {nameTop: "KULCSAR",
+      nameBottom: "DZSENIFER",
       title: "Pozíció megnevezése",
       contact: {
         addressLines: ["Lorem Ipsum, egyszerű minta", "Sugárút, New York, USA"],
@@ -403,7 +406,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
       labels: {
         education: "Tanulmányok",
         skills: "Készségek",
-        award: "Díj",
+        others: "Egyéb",
         profile: "Profil",
         workExperience: "Szakmai tapasztalat",
         languages: "Nyelvek",
@@ -414,49 +417,45 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         { name: "Német", value: 20, levelLabel: "" },
       ],
       education: [
-        { from: "2014", to: "2018", degree: "Végzettség megnevezése", place: "Intézmény neve, Helyszín" },
-        { from: "2010", to: "2014", degree: "Végzettség megnevezése", place: "Intézmény neve, Helyszín" },
+        { from: "2017", to: "2019", degree: "Ápolói végzettség", place: "Zalaegerszegi SZC Deák Ferenc Technikum" },
+        { from: "2020", to: "2021", degree: "Pedagógiai asszisztens", place: "Számpont Oktatási Központ" },
       ],
       skillsHeader: "// Professzionális",
       skills: [
-        "PR",
-        "Erőforrás-menedzsment",
-        "Csapatvezetés",
-        "Közösségi média marketing",
-        "Online marketing",
-        "Költségvetés és tervezés",
-        "Problémamegoldás",
-        "IT alkalmazások",
+        "Csapatmunka",
+        "Alkalmazkodóképesség",
+        "Türelem és empátia",
+        "5S alapelvek alapszintű ismerete",
+        "Részletorientáltság",
+        "Tanulási folyamatok támogatása",
       ],
-      award: {
-        year: "2013",
-        title: "Díj / Eredmény",
-        place: "Cégnév / Helyszín",
-        note: "Nyomdai és szedési helykitöltő szöveg.",
-      },
-      profile:
-        "Helykitöltő szöveg a nyomdai és kiadói iparból; évszázadok óta használatos, és túlélte az elektronikus kiadványszerkesztés korát.",
+      others: [
+        { title: "MS Office ismeretek" },
+        { title: "B kategóriás jogosítvány" },
+      ],
+      profile: "Megbízható és segítőkész munkavállaló oktatási és termelési tapasztalattal. Erősségeim a csapatmunka, az alkalmazkodóképesség és az új készségek elsajátítása iránti nyitottság.",
       experience: [
         {
-          year: "2014",
-          company: "Cégnév",
-          position: "Munkakör megnevezése",
-          summary: "Rövid összefoglaló.",
-          bullets: ["Termelési kód karbantartása", "Csapatmunka", "Teljesítményjavítás"],
+          year: "2022 – 2025",
+          company: "Aptiv Services Hungary Kft.",
+          position: "Termelési munkatárs (elektronikai összeszerelés)",
+          summary: "Elektronikai gyártásban (SMT) dolgoztam, főként precizitást és csapatmunkát igénylő feladatokban.",
+          bullets: [
+            "Összeszerelési feladatok végrehajtása minőségi előírások szerint",
+            "5S alapelvek alkalmazása és a munkahelyi rend fenntartása",
+            "Termelési célok teljesítése gyors ütemű környezetben",
+          ],
         },
         {
-          year: "2018",
-          company: "Cégnév",
-          position: "Munkakör megnevezése",
-          summary: "Rövid összefoglaló.",
-          bullets: ["Felelősségvállalás", "Mentorálás", "Automatizálás"],
-        },
-        {
-          year: "2024",
-          company: "Cégnév",
-          position: "Munkakör megnevezése",
-          summary: "Rövid összefoglaló.",
-          bullets: ["Migráció vezetése", "Feature-ök szállítása", "Költségoptimalizálás"],
+          year: "2020 – 2021",
+          company: "Mindszenti József Általános Iskola és Gimnázium",
+          position: "Pedagógiai asszisztens",
+          summary: "Tanári munka támogatása, diákok segítése a mindennapi iskolai tevékenységekben.",
+          bullets: [
+            "Tanórák és tanulási folyamatok támogatása",
+            "Egyéni igényű diákok segítése",
+            "Pozitív és szervezett tanulási környezet kialakításában való közreműködés",
+          ],
         },
       ],} as ResumeData,
   },

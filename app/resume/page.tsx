@@ -6,6 +6,7 @@ import { PersonId, useLangStore } from "@/lib/store/lang"; // shared Zustand sto
 import { resumeDATA } from "@/content/ResumeData"; // externalized resume content
 import { Separator } from "@/components/ui/separator";
 import { Progress } from "@/components/ui/progress";
+import { MapPinned, Phone, Mail, Calendar1 } from "lucide-react";
 
 // ---------- UI bits ----------
 function SectionTitle({ children }: { children: React.ReactNode }) {
@@ -152,31 +153,45 @@ export default function ResumePage() {
     <main className="min-h-dvh bg-neutral-100 py-10 print:bg-white print:min-h-0">
       <div className="mx-auto w-[900px] max-w-full bg-white shadow-xl print:shadow-none rounded-xl p-10">
         {/* Header */}
-        <div className="flex items-start justify-between gap-6 pb-6 border-b">
+        <div className="flex items-start justify-between gap-6 pb-4 border-b">
           <div>
-            <h1 className="text-5xl font-extrabold tracking-tight leading-none">
-              {t.nameTop}
-            </h1>
-            <h2 className="text-5xl font-extrabold tracking-tight leading-none -mt-2">
-              {t.nameBottom}
-            </h2>
+            <div>
+              <h1 className="text-5xl font-extrabold tracking-tight leading-none">
+                {t.nameTop}
+              </h1>
+              <h2 className="text-5xl font-extrabold tracking-tight leading-none -mt-2">
+                {t.nameBottom}
+              </h2>
+            </div>
             <p className="mt-2 text-gray-500 uppercase tracking-[0.2em] text-xs">
               {t.title}
             </p>
           </div>
-          <div className="text-right text-sm text-gray-600 max-w-xs">
-            <p>
+          <div className="text-right text-sm text-gray-600 max-w-xs flex flex-col items-center justify-center">
+            <div>
               {t.contact.addressLines[0]}
-              <br />
-              {t.contact.addressLines[1]}
-            </p>
-            <p className="mt-2">
-              p. {t.contact.phone}
-              <br />
-              e. {t.contact.email}
-              <br />
-              w. {t.contact.website}
-            </p>
+              <div className="flex items-center justify-end gap-2">
+                <MapPinned className="inline h-4 w-4" />
+
+                {t.contact.addressLines[1]}
+              </div>
+            </div>
+            <div className="mt-2">
+              <div className="flex items-center justify-end gap-2">
+                <Phone className="inline h-4 w-4" />
+                {t.contact.phone}
+              </div>
+
+              <div className="flex items-center justify-end gap-2">
+                <Mail className="inline h-4 w-4" />
+                {t.contact.email}
+              </div>
+
+              <div className="flex items-center justify-end gap-2">
+                <Calendar1 className="inline h-4 w-4" />
+                {t.contact.website}
+              </div>
+            </div>
           </div>
         </div>
 
