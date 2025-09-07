@@ -24,7 +24,7 @@ export type ResumeData = {
   labels: {
     education: string;
     skills: string;
-    award: string;
+    others: string;
     profile: string;
     workExperience: string;
     languages: string; 
@@ -32,7 +32,7 @@ export type ResumeData = {
   education: Education[];
   skillsHeader: string;
   skills: string[];
-  award?: { year: string; title: string; place: string; note?: string };
+  others?: { title: string; note?: string }[];
   profile: string;
   experience: Experience[];
   languages?: LanguageSkill[];
@@ -54,7 +54,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
       labels: {
         education: "Education",
         skills: "Skills",
-        award: "Others",
+        others: "Others",
         profile: "Profile",
         workExperience: "Work Experience",
         languages: "Languages", // ⬅️
@@ -77,12 +77,12 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         "Network administration fundamentals",
         "Programming & scripting (Python, C#)",
       ],
-      award: {
-        year: "2011",
-        title: "Driving License",
-        place: " ",
-        note: "Category B",
-      },
+      others: [
+        { title: "Driving License (Category B)" },
+        { title: "MS Office proficiency" },
+        { title: "AWS Cloud Practitioner – in progress" },
+        { title: "German language learning – in progress" },
+      ],
       profile:
         "Lorem ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting.",
       experience: [
@@ -123,7 +123,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
       labels: {
         education: "Ausbildung",
         skills: "Fähigkeiten",
-        award: "Kentnisse",
+        others: "Sonstiges",
         profile: "Profil",
         workExperience: "Berufserfahrung",
         languages: "Fremdsprachen",
@@ -146,12 +146,12 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         "Grundlagen der Netzwerkadministration",
         "Programmierung & Scripting (Python, C#)",
       ],
-      award: {
-        year: "2013",
-        title: "Auszeichnung / Leistung",
-        place: "Firmenname / Ort",
-        note: "Lorem ipsum Blindtext für Druck & Satz.",
-      },
+      others: [
+        { title: "Führerschein (Klasse B)" },
+        { title: "MS Office Kenntnisse" },
+        { title: "AWS Cloud Practitioner – in Ausbildung" },
+        { title: "Deutsch lernen – in Ausbildung" },
+      ],
       profile: "Lorem Ipsum ist ein Blindtext der Druck- und Satzindustrie und hat Jahrhunderte überdauert.",
       experience: [
         {
@@ -191,7 +191,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
       labels: {
         education: "Tanulmányok",
         skills: "Készségek",
-        award: "Egyéb",
+        others: "Egyéb", 
         profile: "Profil",
         workExperience: "Szakmai tapasztalat",
         languages: "Nyelvek",
@@ -214,12 +214,13 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         "Hálózatkezelési alapok",
         "Programozás & szkriptnyelvek (Python, C#)",
       ],
-      award: {
-        year: "2013",
-        title: "Díj / Eredmény",
-        place: "Cégnév / Helyszín",
-        note: "Nyomdai és szedési helykitöltő szöveg.",
-      },
+      others: [
+        { title: "B kategóriás jogosítvány" },
+        { title: "MS Office ismeretek" },
+        { title: "AWS Cloud Practitioner – folyamatban" },
+        { title: "Német nyelv tanulás – folyamatban" },
+      ],
+      
       profile:
         "Helykitöltő szöveg a nyomdai és kiadói iparból; évszázadok óta használatos, és túlélte az elektronikus kiadványszerkesztés korát.",
       experience: [

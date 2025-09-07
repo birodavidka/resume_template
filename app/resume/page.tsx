@@ -211,7 +211,7 @@ export default function ResumePage() {
             <section>
               <SectionTitle>{t.labels.skills}</SectionTitle>
               <p className="uppercase text-xs text-gray-500 tracking-[0.1em] mb-1"></p>
-              <ul className="space-y-1 text-sm text-gray-700">
+              <ul className="space-y-1 text-xs text-gray-700">
                 {t.skills.map((s, i) => (
                   <li key={i}>{s}</li>
                 ))}
@@ -244,18 +244,22 @@ export default function ResumePage() {
               </section>
             )}
             <Separator />
-            {/* Award */}
-            {t.award && (
+            {/* Others */}
+            {t.others && t.others.length > 0 && (
               <section>
-                <SectionTitle>{t.labels.award}</SectionTitle>
-                <div>
-                  <p className="text-xs text-gray-500">{t.award.year}</p>
-                  <p className="font-semibold uppercase">{t.award.title}</p>
-                  <p className="text-sm text-gray-600">{t.award.place}</p>
-                  {t.award.note && (
-                    <p className="text-sm text-gray-600 mt-2">{t.award.note}</p>
-                  )}
-                </div>
+                <SectionTitle>{t.labels.others ?? "Others"}</SectionTitle>
+                <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                  {t.others.map((o, i) => (
+                    <li key={i}>
+                      {o.title}
+                      {o.note && (
+                        <span className="text-gray-500 text-xs ml-2">
+                          ({o.note})
+                        </span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
               </section>
             )}
           </aside>
