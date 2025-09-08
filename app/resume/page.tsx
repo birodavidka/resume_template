@@ -172,11 +172,10 @@ export default function ResumePage() {
               {t.contact.addressLines[0]}
               <div className="flex items-center justify-end gap-2">
                 <MapPinned className="inline h-4 w-4" />
-
                 {t.contact.addressLines[1]}
               </div>
             </div>
-            <div className="mt-2">
+            <div className="">
               <div className="flex items-center justify-end gap-2">
                 <Phone className="inline h-4 w-4" />
                 {t.contact.phone}
@@ -299,7 +298,7 @@ export default function ResumePage() {
                   className={`rounded-xl  p-5 ${idx > 0 ? "mt-6" : ""}`}
                 >
                   <div className="flex items-center gap-3 text-sm text-gray-600">
-                    <span className="w-12">{exp.year}</span>
+                    <span className="w-24">{exp.year}</span>
                     <span className="text-gray-400">{exp.company}</span>
                   </div>
                   <Separator />
