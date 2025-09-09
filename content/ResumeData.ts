@@ -267,7 +267,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
       nameBottom: "DZSENIFER",
       title: "",
       contact: {
-        addressLines: ["", "Szombathely, Hungary"],
+        addressLines: [" ", "Szombathely, Hungary"],
         phone: "(+36 30) 472 1115",
         email: "kulcsardzsenifer7@gmail.com",
         website: "1999.03.20",

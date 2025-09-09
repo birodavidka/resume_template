@@ -167,7 +167,7 @@ export default function ResumePage() {
               {t.title}
             </p>
           </div>
-          <div className="text-right text-sm text-gray-600 max-w-xs flex flex-col items-center justify-center">
+          <div className="text-left text-sm text-gray-600 max-w-xs flex flex-col items-center justify-center">
             <div>
               {t.contact.addressLines[0]}
               <div className="flex items-center justify-end gap-2">
