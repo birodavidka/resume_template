@@ -7,6 +7,7 @@ import { resumeDATA } from "@/content/ResumeData"; // externalized resume conten
 import { Separator } from "@/components/ui/separator";
 import { Progress } from "@/components/ui/progress";
 import { MapPinned, Phone, Mail, Calendar1 } from "lucide-react";
+import AvatarPic from "@/components/avatar";
 
 // ---------- UI bits ----------
 function SectionTitle({ children }: { children: React.ReactNode }) {
@@ -155,13 +156,16 @@ export default function ResumePage() {
         {/* Header */}
         <div className="flex items-start justify-between gap-6 pb-4 border-b">
           <div>
-            <div>
-              <h1 className="text-5xl font-extrabold tracking-tight leading-none">
-                {t.nameTop}
-              </h1>
-              <h2 className="text-5xl font-extrabold tracking-tight leading-none -mt-2">
-                {t.nameBottom}
-              </h2>
+            <div className="flex items-center gap-6">
+              <div>
+                <h1 className="text-5xl font-extrabold tracking-tight leading-none">
+                  {t.nameTop}
+                </h1>
+                <h2 className="text-5xl font-extrabold tracking-tight leading-none -mt-2">
+                  {t.nameBottom}
+                </h2>
+              </div>
+              <AvatarPic />
             </div>
             <p className="mt-2 text-gray-500 uppercase tracking-[0.2em] text-xs">
               {t.title}

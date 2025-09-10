@@ -36,6 +36,7 @@ export type ResumeData = {
   profile: string;
   experience: Experience[];
   languages?: LanguageSkill[];
+  avatarUrl?: string;
 };
 
 // ⚠️ Csak EGY export legyen ebben a fájlban ezzel a névvel!
@@ -51,6 +52,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         email: "biro.david93@gmail.com",
         website: "1993.01.23.",
       },
+      avatarUrl: "/avatars/david.png",
       labels: {
         education: "Education",
         skills: "Skills",
@@ -75,7 +77,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         "Team collaboration in production environments",
         "Basic database management (SQL)",
         "Network administration fundamentals",
-        "Programming & scripting (Python, C#)",
+        "Programming & scripting (Typescript, node.js)",
       ],
       others: [
         { title: "Driving License (Category B)" },
@@ -98,7 +100,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
           ],
         },
         {
-          year: "2018",
+          year: "2018 - 2024",
           company: "Aptiv Services Hungary Kft.",
           position: "Production Operator (Electronics Manufacturing)",
           summary: "Worked in an international automotive supplier company, focusing on the assembly of electronic components (SMT) and applying lean principles such as 5S.",
@@ -128,6 +130,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         workExperience: "Berufserfahrung",
         languages: "Fremdsprachen",
       },
+      avatarUrl: "/avatars/david.png",
       languages: [
         { name: "Ungarisch", value: 100, levelLabel: "Muttersprache" },
         { name: "Englisch", value: 75, levelLabel: "" },
@@ -154,7 +157,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         "Teamarbeit in Produktionsumgebungen",
         "Grundlagen der Datenbankverwaltung (SQL)",
         "Grundlagen der Netzwerkadministration",
-        "Programmierung & Scripting (Python, C#)",
+        "Programmierung & Scripting (Typescript, node.js)",
       ],
       others: [
         { title: "Führerschein (Klasse B)" },
@@ -176,7 +179,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
           ],
         },
         {
-          year: "2018",
+          year: "2018 - 2024",
           company: "Aptiv Services Hungary Kft.",
           position: "Produktionsmitarbeiter (Elektronikfertigung)",
           summary: "Tätig bei einem internationalen Automobilzulieferer mit Schwerpunkt auf der Montage elektronischer Komponenten (SMT) und der Anwendung von Lean-Prinzipien wie 5S.",
@@ -206,6 +209,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         workExperience: "Szakmai tapasztalat",
         languages: "Nyelvek",
       },
+      avatarUrl: "/avatars/david.png",
       languages: [
         { name: "Magyar", value: 100, levelLabel: "Anyanyelv" },
         { name: "Angol", value: 75, levelLabel: "" },
@@ -222,7 +226,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         "Csapatmunka termelési környezetben",
         "Alapvető adatbázis-kezelés (SQL)",
         "Hálózatkezelési alapok",
-        "Programozás & szkriptnyelvek (Python, C#)",
+        "Programozás & szkriptnyelvek (Typescript, node.js)",
       ],
       others: [
         { title: "B kategóriás jogosítvány" },
@@ -246,7 +250,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
           ],
         },
         {
-          year: "2019",
+          year: "2018 - 2024",
           company: "Aptiv Services Hungary Kft.",
           position: "Termelési munkatárs (Elektronikai gyártás)",
           summary: "Nemzetközi autóipari beszállítónál dolgoztam, főként elektronikai alkatrészek összeszerelésében (SMT), valamint lean eszközök – például 5S – alkalmazásában.",
@@ -280,6 +284,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         workExperience: "Work Experience",
         languages: "Languages", // 
       },
+      avatarUrl: "/avatars/dzsenifer.png",
       languages: [               // ⬅️
         { name: "Hungarian", value: 100, levelLabel: "Native" },
         { name: "English", value: 75, levelLabel: "" },
@@ -346,6 +351,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
           workExperience: "Berufserfahrung",
           languages: "Sprachen",
         },
+        avatarUrl: "/avatars/dzsenifer.png",
         languages: [
           { name: "Ungarisch", value: 100, levelLabel: "Muttersprache" },
           { name: "Englisch", value: 75, levelLabel: "" },
@@ -411,6 +417,7 @@ export const resumeDATA: Record<PersonId, Record<Lang, ResumeData>> = {
         workExperience: "Szakmai tapasztalat",
         languages: "Nyelvek",
       },
+      avatarUrl: "/avatars/dzsenifer.png",
       languages: [
         { name: "Magyar", value: 100, levelLabel: "Anyanyelv" },
         { name: "Angol", value: 60, levelLabel: "" },
